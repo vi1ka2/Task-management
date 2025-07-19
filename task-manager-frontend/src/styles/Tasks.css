@@ -1,0 +1,81 @@
+.tasks-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+  }
+  
+  .tasks-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tasks-container button.logout {
+    float: right;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .tasks-container .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .tasks-container .task-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .tasks-container .task-input button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .tasks-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tasks-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tasks-container li span {
+    cursor: pointer;
+  }
+  
+  .tasks-container li span.done {
+    text-decoration: line-through;
+    color: green;
+  }
+  
+  .tasks-container li button {
+    background: transparent;
+    border: none;
+    color: #dc3545;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .tasks-container input[type="text"] {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+  }
+  

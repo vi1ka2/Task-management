@@ -13,7 +13,7 @@ function SignupPage() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/auth/signup', {
+      const res = await axios.post('https://task-management-7juw.onrender.com/auth/signup', {
         email,
         password
       });

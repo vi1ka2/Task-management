@@ -31,4 +31,9 @@ A simple full-stack **Task Management** application built with the **MERN stack*
 - JWT for authentication
 - bcrypt for password hashing
 
----
+---<img width="1373" height="823" alt="image" src="https://github.com/user-attachments/assets/1e65503b-76d3-4f2f-8ad8-97c27c6b23d2" />
+<img width="1366" height="736" alt="image" src="https://github.com/user-attachments/assets/211390a7-dcfe-4673-8306-b53c910e4d62" />
+<img width="1355" height="410" alt="image" src="https://github.com/user-attachments/assets/cdb9f6b6-dd8e-4c5c-869b-f10f8a38f771" />
+
+
+

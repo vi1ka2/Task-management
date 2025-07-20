@@ -14,13 +14,13 @@ function TasksPage() {
 
   const createTask = async () => {
     if (!title.trim()) return;
-    await axios.post('http://localhost:5000/tasks', { title }, { headers });
+    await axios.post('https://task-management-7juw.onrender.com/tasks', { title }, { headers });
     setTitle('');
     await fetchTasks();
   };
 
   const toggleComplete = async (task) => {
-    await axios.put(`http://localhost:5000/tasks/${task._id}`, {
+    await axios.put(`https://task-management-7juw.onrender.com/tasks/${task._id}`, {
       title: task.title,
       completed: !task.completed
     }, { headers });
@@ -28,7 +28,7 @@ function TasksPage() {
   };
 
   const deleteTask = async (id) => {
-    await axios.delete(`http://localhost:5000/tasks/${id}`, { headers });
+    await axios.delete(`https://task-management-7juw.onrender.com/tasks/${id}`, { headers });
     await fetchTasks();
   };
 
@@ -44,7 +44,7 @@ function TasksPage() {
 
   const handleSaveEdit = async (task) => {
     if (!editTitle.trim()) return;
-    await axios.put(`http://localhost:5000/tasks/${task._id}`, {
+    await axios.put(`https://task-management-7juw.onrender.com/tasks/${task._id}`, {
       title: editTitle,
       completed: task.completed
     }, { headers });
@@ -54,7 +54,7 @@ function TasksPage() {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/tasks', { headers });
+      const res = await axios.get('https://task-management-7juw.onrender.com/tasks', { headers });
       setTasks(res.data);
     } catch (error) {
       console.error('Failed to fetch tasks:', error);
@@ -65,7 +65,7 @@ function TasksPage() {
     // inline function to avoid dependency warning
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/tasks', { headers });
+        const res = await axios.get('https://task-management-7juw.onrender.com/tasks', { headers });
         setTasks(res.data);
       } catch (error) {
         console.error('Failed to fetch tasks:', error);
